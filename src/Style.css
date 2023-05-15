@@ -1,0 +1,56 @@
+.admin-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.login-container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+button {
+    margin-top: 10px;
+}
+
+input,
+select {
+    background: none;
+    border: 0;
+    color: #fff;
+    text-align: center;
+
+}
+
+.unit-converter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.unit-converter>div {
+    margin-bottom: 10px;
+}
+
+.unit-converter label {
+    width: 150px;
+    text-align: right;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.link {
+    margin-right: 10px;
+    color: #fff;
+}
