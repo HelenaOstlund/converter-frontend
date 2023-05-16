@@ -68,3 +68,29 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Insert into database to get the right units for converter:
+
+INSERT INTO units (unit_name, unit_type, conversion_rate) 
+VALUES('liter', 'volume', 1), 
+('Cup (US)', 'volume', 0.2366), ('Cup (Metric)', 'volume', 0.25),
+('Cup (Imperial)', 'volume', 0.2841),
+('Deciliter', 'volume', 0.1),
+('Fluid Ounces (US)', 'volume', 0.0296),
+('Fluid Ounces (UK)' , 'volume', 0.0284),
+('gallon (US)', 'volume', 3.78541),
+('gallon (UK)', 'volume', 4.55), 
+('Pints (UK)', 'volume', 0.5683), 
+('Pints (US)', 'volume', 0.4732),
+('Quarts (UK)', 'volume', 1.1365),
+('Quarts (US)', 'volume', 0.9464),
+('Tablespoon (US)', 'volume', 0.0148),
+('Tablespoon (Metric)', 'volume', 0.015),
+('Tablespoon (Imperial)', 'volume', 0.0178),
+('Teaspoon (US)', 'volume', 0.0049),
+('Teaspoon (Metric)', 'volume', 0.005),
+('Teaspoon (Imperial)', 'volume', 0.0059),
+('kg', 'weight', 1), 
+('gram', 'weight', 0.001), 
+('pound', 'weight', 0.4536), 
+('ounce', 'weight', 0.0283);
