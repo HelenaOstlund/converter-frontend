@@ -87,7 +87,10 @@ export default function UnitConverter() {
                     </label>
                 </div>
                 <div>
-                    <p>Converted Value: {convertedValue}</p>
+                    <p>
+                        Converted Value: {convertedValue}
+                        {destinationUnit && `(${destinationUnit.unitName})`}
+                    </p>
                 </div>
             </div>
             <div>
