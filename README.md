@@ -1,6 +1,5 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## `npm install`
+run to install node modules
 
 ## Available Scripts
 
@@ -29,42 +28,32 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Create Admin for Login
+Create Admin user in postman using http://localhost:8080/api/v1/auth/register
+Username and password are required 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Insert into database to get the right units for converter:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+INSERT INTO units (unit_name, unit_type, conversion_rate) 
+VALUES('liter', 'volume', 1), 
+('Cup (US)', 'volume', 0.2366), ('Cup (Metric)', 'volume', 0.25),
+('Cup (Imperial)', 'volume', 0.2841),
+('Deciliter', 'volume', 0.1),
+('Fluid Ounces (US)', 'volume', 0.0296),
+('Fluid Ounces (UK)' , 'volume', 0.0284),
+('gallon (US)', 'volume', 3.78541),
+('gallon (UK)', 'volume', 4.55), 
+('Pints (UK)', 'volume', 0.5683), 
+('Pints (US)', 'volume', 0.4732),
+('Quarts (UK)', 'volume', 1.1365),
+('Quarts (US)', 'volume', 0.9464),
+('Tablespoon (US)', 'volume', 0.0148),
+('Tablespoon (Metric)', 'volume', 0.015),
+('Tablespoon (Imperial)', 'volume', 0.0178),
+('Teaspoon (US)', 'volume', 0.0049),
+('Teaspoon (Metric)', 'volume', 0.005),
+('Teaspoon (Imperial)', 'volume', 0.0059),
+('kg', 'weight', 1), 
+('gram', 'weight', 0.001), 
+('pound', 'weight', 0.4536), 
+('ounce', 'weight', 0.0283);
