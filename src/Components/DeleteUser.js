@@ -32,7 +32,7 @@ function DeleteUser() {
 
     return (
         <div>
-            <h3>Delete User</h3>
+            <h3>Delete Admin</h3>
             <form onSubmit={handleDelete}>
                 <div>
                     <div>
