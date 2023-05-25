@@ -25,10 +25,3 @@ function App() {
 }
 
 export default App;
-
-/*<MyButton onClick={() => alert("Hello World")}>
-        console
-      </MyButton>
-      <MyButton onClick={() => console.log("Hello World")}>
-        alert
-      </MyButton> */
